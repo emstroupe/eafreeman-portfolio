@@ -228,7 +228,7 @@ img {
 .site-navigation ul {
   padding: 0;
   margin-top: 0;
-  margin-right: 0em;
+  margin-right: -5em;
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
@@ -242,7 +242,6 @@ img {
 .site-navigation ul li a {
   display: block;
   padding: 1em 1em;
-  margin: 0 .2em;
   -webkit-transition: .2s ease-out all;
   -o-transition: .2s ease-out all;
   transition: .2s ease-out all; }
@@ -393,8 +392,8 @@ img {
   #fullscreen-m .m-body .info,
   #fullscreen-m .m-body .riopele,
   #fullscreen-m .m-body .sedaris,
-  #fullscreen-m .m-body .magazine,
-  #fullscreen-m .m-body .brochure,
+  #fullscreen-m .m-body .palate,
+  #fullscreen-m .m-body .parallax,
   #fullscreen-m .m-body .jones,
   #fullscreen-m .m-body .luis,
   #fullscreen-m .m-body .scene,
@@ -414,6 +413,29 @@ img {
     -o-transition: width .4s;
     transition: width .4s;
     -webkit-transition: width .4s; }
+  #fullscreen-m .m-body .riopeleb,
+  #fullscreen-m .m-body .sedarisb,
+  #fullscreen-m .m-body .palateb,
+  #fullscreen-m .m-body .parallaxb,
+  #fullscreen-m .m-body .jonesb,
+  #fullscreen-m .m-body .luisb,
+  #fullscreen-m .m-body .sceneb,
+  #fullscreen-m .m-body .untitledb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    float: left;
+    width: 60%;
+    height: 100vh;
+    -o-transition: width .4s;
+    transition: width .4s;
+    -webkit-transition: width .4s; }
   #fullscreen-m .m-body .info {
     background-color: white;
     -webkit-box-align: end;
@@ -424,42 +446,51 @@ img {
     justify-content: flex-start;
     padding: 4vh 5vw; }
     #fullscreen-m .m-body .info h1 {
-      font-size: 120px;
+      font-size: 100px;
+      line-height: 1em;
       text-transform: uppercase;
-      margin-bottom: 20px; }
+      margin-bottom: 35px; }
     #fullscreen-m .m-body .info p {
       color: lightgrey;
       text-transform: uppercase;
       font-size: 18px; }
-  #fullscreen-m .m-body .riopele {
-    background-image: url(../img/EmilyFreeman.png);
+  #fullscreen-m .m-body .riopele,
+  #fullscreen-m .m-body .riopeleb {
+    background-image: url(../img/riopele1.png);
     background-repeat: no-repeat;
     background-position: center; }
-  #fullscreen-m .m-body .sedaris {
-    background-image: url(../img/book.all.gif);
+  #fullscreen-m .m-body .sedaris,
+  #fullscreen-m .m-body .sedarisb {
+    background-image: url(../img/sedaris1.gif);
     background-repeat: no-repeat;
     background-position: center; }
-  #fullscreen-m .m-body .magazine {
-    background-image: url(../img/magazine.gif);
+  #fullscreen-m .m-body .palate,
+  #fullscreen-m .m-body .palateb {
+    background-image: url(../img/palate1.gif);
     background-repeat: no-repeat;
     background-position: center; }
-  #fullscreen-m .m-body .brochure {
-    background-image: url(../img/brochure3.gif);
+  #fullscreen-m .m-body .parallax,
+  #fullscreen-m .m-body .parallaxb {
+    background-image: url(../img/parallax1.gif);
     background-repeat: no-repeat;
     background-position: center; }
-  #fullscreen-m .m-body .jones {
-    background-image: url(../img/jones.top.gif);
+  #fullscreen-m .m-body .jones,
+  #fullscreen-m .m-body .jonesb {
+    background-image: url(../img/jones1.gif);
     background-repeat: no-repeat;
     background-position: center; }
-  #fullscreen-m .m-body .luis {
+  #fullscreen-m .m-body .luis,
+  #fullscreen-m .m-body .luisb {
     background-image: url(../img/luis.jpg);
     background-repeat: no-repeat;
     background-position: center; }
-  #fullscreen-m .m-body .scene {
+  #fullscreen-m .m-body .scene,
+  #fullscreen-m .m-body .sceneb {
     background-image: url(../img/scene.png);
     background-repeat: no-repeat;
     background-position: center; }
-  #fullscreen-m .m-body .untitled {
+  #fullscreen-m .m-body .untitled,
+  #fullscreen-m .m-body .untitledb {
     background-image: url(../img/untitled.png);
     background-repeat: no-repeat;
     background-position: center; }

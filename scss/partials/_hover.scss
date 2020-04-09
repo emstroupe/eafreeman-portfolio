@@ -46,8 +46,8 @@
         .info,
         .riopele,
         .sedaris,
-        .magazine,
-        .brochure,
+        .palate,
+        .parallax,
         .jones,
         .luis,
         .scene,
@@ -64,6 +64,26 @@
             -webkit-transition: width .4s;
         }
 
+        .riopeleb,
+        .sedarisb,
+        .palateb,
+        .parallaxb,
+        .jonesb,
+        .luisb,
+        .sceneb,
+        .untitledb{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            float: left;
+            width: 60%;
+            height: 100vh;
+
+            transition: width .4s;
+            -webkit-transition: width .4s;
+        }
+
         .info{
             background-color: white;
             align-items: flex-end;
@@ -72,9 +92,10 @@
             padding: 4vh 5vw;
 
             h1{
-                font-size: 120px;
+                font-size: 100px;
+                line-height: 1em;
                 text-transform: uppercase;
-                margin-bottom: 20px;
+                margin-bottom: 35px;
             }
 
             p{
@@ -84,50 +105,59 @@
             }
         }
 
-        .riopele{ 
-            background-image: url(../img/EmilyFreeman.png); 
+        .riopele,
+        .riopeleb{ 
+            background-image: url(../img/riopele1.png); 
             background-repeat: no-repeat;
             background-position: center;
      
         }
-        .sedaris{
-            background-image: url(../img/book.all.gif); 
+        .sedaris,
+        .sedarisb{
+            background-image: url(../img/sedaris1.gif); 
             background-repeat: no-repeat;
             background-position: center;
            }
 
-        .magazine{ 
-            background-image: url(../img/magazine.gif); 
+        .palate,
+        .palateb{ 
+            background-image: url(../img/palate1.gif); 
             background-repeat: no-repeat;
             background-position: center;
             
          }
-         .brochure{ 
-            background-image: url(../img/brochure3.gif); 
+         .parallax,
+         .parallaxb{ 
+            background-image: url(../img/parallax1.gif); 
             background-repeat: no-repeat;
             background-position: center;
          }
 
 
-        .jones{ 
-            background-image: url(../img/jones.top.gif); 
+        .jones,
+        .jonesb{ 
+            background-image: url(../img/jones1.gif); 
             background-repeat: no-repeat;
             background-position: center;
      
         }
-        .luis{
+        .luis,
+        .luisb{
             background-image: url(../img/luis.jpg); 
             background-repeat: no-repeat;
             background-position: center;
            }
 
-        .scene{ 
+        .scene,
+        .sceneb{ 
             background-image: url(../img/scene.png); 
             background-repeat: no-repeat;
             background-position: center;
             
          }
-         .untitled{ 
+
+        .untitled,
+        .untitledb{ 
             background-image: url(../img/untitled.png); 
             background-repeat: no-repeat;
             background-position: center;
