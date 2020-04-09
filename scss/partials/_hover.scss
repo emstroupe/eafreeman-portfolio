@@ -1,0 +1,138 @@
+#fullscreen-m{ width: 100vw; height: 100vh; }
+
+.m-fullscreen-menu{
+    background: white;
+    margin: 0;  padding: 0;
+
+    .m-dialog {
+        margin: 0;  padding: 0;
+        width: 100vw;
+        height:100vh;
+        background-color: white;
+    }
+
+    .m-content {
+        background: transparent;
+        margin: 0;  padding: 0;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+
+        button{
+            position: absolute;
+            top: 20px; left: 20px;
+            z-index: 2000;
+
+            span{
+                font-size: 18px;
+
+                i{
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+
+#fullscreen-m{
+    .m-body{
+        background-color: lightgrey;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;  padding: 0;
+
+        .info,
+        .riopele,
+        .sedaris,
+        .magazine,
+        .brochure,
+        .jones,
+        .luis,
+        .scene,
+        .untitled{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            float: left;
+            width: 15%;
+            height: 100vh;
+
+            transition: width .4s;
+            -webkit-transition: width .4s;
+        }
+
+        .info{
+            background-color: white;
+            align-items: flex-end;
+            justify-content: flex-start;
+
+            padding: 4vh 5vw;
+
+            h1{
+                font-size: 120px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            p{
+                color: lightgrey;
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+        }
+
+        .riopele{ 
+            background-image: url(../img/EmilyFreeman.png); 
+            background-repeat: no-repeat;
+            background-position: center;
+     
+        }
+        .sedaris{
+            background-image: url(../img/book.all.gif); 
+            background-repeat: no-repeat;
+            background-position: center;
+           }
+
+        .magazine{ 
+            background-image: url(../img/magazine.gif); 
+            background-repeat: no-repeat;
+            background-position: center;
+            
+         }
+         .brochure{ 
+            background-image: url(../img/brochure3.gif); 
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+
+
+        .jones{ 
+            background-image: url(../img/jones.top.gif); 
+            background-repeat: no-repeat;
+            background-position: center;
+     
+        }
+        .luis{
+            background-image: url(../img/luis.jpg); 
+            background-repeat: no-repeat;
+            background-position: center;
+           }
+
+        .scene{ 
+            background-image: url(../img/scene.png); 
+            background-repeat: no-repeat;
+            background-position: center;
+            
+         }
+         .untitled{ 
+            background-image: url(../img/untitled.png); 
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+
+        .hover{ width: 40%; }
+    }
+}

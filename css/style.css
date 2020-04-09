@@ -29,6 +29,7 @@ CSS TABLE OF CONTENTS
         # @MEDIA LARGE
     # IMAGES
     # FORM
+    # HOVER 
 
 
 
@@ -211,15 +212,10 @@ img {
   margin: 0; }
 
 .site-header h1 {
+  font-size: 1.25em;
   padding: 0;
-  margin-top: 0;
-  margin-left: 0em;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-  -webkit-transform: rotate(-90deg) translate(-50vh);
-  -ms-transform: rotate(-90deg) translate(-50vh);
-  transform: rotate(-90deg) translate(-50vh); }
+  margin-top: 2em;
+  margin-left: 2em; }
 
 .site-header h1 a {
   display: inline-block;
@@ -269,7 +265,7 @@ img {
 /* SITE-FOOTER */
 .site-footer {
   background-color: rgba(0, 0, 0, 0.9);
-  margin: 0 auto;
+  margin: 0;
   padding: 1em; }
   .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer p {
     color: white;
@@ -354,3 +350,118 @@ img {
   letter-spacing: .25em;
   text-transform: uppercase;
   border-radius: 0; }
+
+#fullscreen-m {
+  width: 100vw;
+  height: 100vh; }
+
+.m-fullscreen-menu {
+  background: white;
+  margin: 0;
+  padding: 0; }
+  .m-fullscreen-menu .m-dialog {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white; }
+  .m-fullscreen-menu .m-content {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .m-fullscreen-menu .m-content button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2000; }
+      .m-fullscreen-menu .m-content button span {
+        font-size: 18px; }
+        .m-fullscreen-menu .m-content button span i {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-style: normal; }
+
+#fullscreen-m .m-body {
+  background-color: lightgrey;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+  #fullscreen-m .m-body .info,
+  #fullscreen-m .m-body .riopele,
+  #fullscreen-m .m-body .sedaris,
+  #fullscreen-m .m-body .magazine,
+  #fullscreen-m .m-body .brochure,
+  #fullscreen-m .m-body .jones,
+  #fullscreen-m .m-body .luis,
+  #fullscreen-m .m-body .scene,
+  #fullscreen-m .m-body .untitled {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    float: left;
+    width: 15%;
+    height: 100vh;
+    -o-transition: width .4s;
+    transition: width .4s;
+    -webkit-transition: width .4s; }
+  #fullscreen-m .m-body .info {
+    background-color: white;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 4vh 5vw; }
+    #fullscreen-m .m-body .info h1 {
+      font-size: 120px;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+    #fullscreen-m .m-body .info p {
+      color: lightgrey;
+      text-transform: uppercase;
+      font-size: 18px; }
+  #fullscreen-m .m-body .riopele {
+    background-image: url(../img/EmilyFreeman.png);
+    background-repeat: no-repeat;
+    background-position: center; }
+  #fullscreen-m .m-body .sedaris {
+    background-image: url(../img/book.all.gif);
+    background-repeat: no-repeat;
+    background-position: center; }
+  #fullscreen-m .m-body .magazine {
+    background-image: url(../img/magazine.gif);
+    background-repeat: no-repeat;
+    background-position: center; }
+  #fullscreen-m .m-body .brochure {
+    background-image: url(../img/brochure3.gif);
+    background-repeat: no-repeat;
+    background-position: center; }
+  #fullscreen-m .m-body .jones {
+    background-image: url(../img/jones.top.gif);
+    background-repeat: no-repeat;
+    background-position: center; }
+  #fullscreen-m .m-body .luis {
+    background-image: url(../img/luis.jpg);
+    background-repeat: no-repeat;
+    background-position: center; }
+  #fullscreen-m .m-body .scene {
+    background-image: url(../img/scene.png);
+    background-repeat: no-repeat;
+    background-position: center; }
+  #fullscreen-m .m-body .untitled {
+    background-image: url(../img/untitled.png);
+    background-repeat: no-repeat;
+    background-position: center; }
+  #fullscreen-m .m-body .hover {
+    width: 40%; }

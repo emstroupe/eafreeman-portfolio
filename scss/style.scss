@@ -29,6 +29,7 @@ CSS TABLE OF CONTENTS
         # @MEDIA LARGE
     # IMAGES
     # FORM
+    # HOVER 
 
 
 
@@ -62,6 +63,8 @@ $breakpoint-large: 1250px;
 @import 'partials/img';
 @import 'partials/structure';
 @import 'partials/form';
+@import 'partials/hover';
+
 
 
 

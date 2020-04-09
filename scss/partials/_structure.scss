@@ -7,11 +7,12 @@
     margin: 0;
   }
 .site-header h1 {
+  font-size: 1.25em;
    padding: 0;
-    margin-top: 0;
-    margin-left: 0em;
-    transform-origin: center;
-    transform: rotate(-90deg) translate(-50vh);
+    margin-top: 2em;
+    margin-left: 2em;
+    // transform-origin: center;
+    // transform: rotate(-90deg) translate(-50vh);
   }
   
   .site-header h1 a {
@@ -66,8 +67,9 @@ padding: 1em 1em;
 /* SITE-FOOTER */
 .site-footer {
     background-color: $color-black; 
-    margin: 0 auto;
+    margin: 0;
     padding: 1em;  
+    
 
     h1, h2, h3, h4, p {
       color: white;
