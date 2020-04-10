@@ -38,6 +38,7 @@
 
 #fullscreen-m{
     .m-body{
+        display: flex;
         background-color: lightgrey;
         width: 100vw;
         height: 100vh;
@@ -52,16 +53,16 @@
         .luis,
         .scene,
         .untitled{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
 
-            float: left;
-            width: 15%;
+            // float: left;
+            // width: 15%;
             height: 100vh;
 
-            transition: width .4s;
-            -webkit-transition: width .4s;
+            // transition: width .4s;
+            // -webkit-transition: width .4s;
         }
 
         .riopeleb,
@@ -72,16 +73,16 @@
         .luisb,
         .sceneb,
         .untitledb{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
 
-            float: left;
-            width: 60%;
-            height: 100vh;
+            // float: left;
+            // width: 60%;
+            // height: 100vh;
 
-            transition: width .4s;
-            -webkit-transition: width .4s;
+            // transition: width .4s;
+            // -webkit-transition: width .4s;
         }
 
         .info{
@@ -108,61 +109,67 @@
         .riopele,
         .riopeleb{ 
             background-image: url(../img/riopele1.png); 
-            background-repeat: no-repeat;
-            background-position: center;
+           
      
         }
         .sedaris,
         .sedarisb{
             background-image: url(../img/sedaris1.gif); 
-            background-repeat: no-repeat;
-            background-position: center;
+            
            }
 
         .palate,
         .palateb{ 
             background-image: url(../img/palate1.gif); 
-            background-repeat: no-repeat;
-            background-position: center;
+           
             
          }
          .parallax,
          .parallaxb{ 
             background-image: url(../img/parallax1.gif); 
-            background-repeat: no-repeat;
-            background-position: center;
+         
          }
 
 
         .jones,
         .jonesb{ 
             background-image: url(../img/jones1.gif); 
-            background-repeat: no-repeat;
-            background-position: center;
+          
      
         }
         .luis,
         .luisb{
             background-image: url(../img/luis.jpg); 
-            background-repeat: no-repeat;
-            background-position: center;
+           
            }
 
         .scene,
         .sceneb{ 
             background-image: url(../img/scene.png); 
-            background-repeat: no-repeat;
-            background-position: center;
+        
             
          }
 
         .untitled,
         .untitledb{ 
             background-image: url(../img/untitled.png); 
-            background-repeat: no-repeat;
-            background-position: center;
+         
          }
 
         .hover{ width: 40%; }
     }
 }
+.grow {
+    width: 15%;
+    display: block;
+    background-size: cover;
+    
+    // transform: scaleX(1);
+    // transform-origin: right;
+    transition: .4s ease all;
+    &:hover {
+        // transform: scaleX(1.2);
+        width: 40%;
+    }
+}
+

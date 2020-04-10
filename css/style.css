@@ -384,6 +384,9 @@ img {
           font-style: normal; }
 
 #fullscreen-m .m-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: lightgrey;
   width: 100vw;
   height: 100vh;
@@ -398,44 +401,7 @@ img {
   #fullscreen-m .m-body .luis,
   #fullscreen-m .m-body .scene,
   #fullscreen-m .m-body .untitled {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    float: left;
-    width: 15%;
-    height: 100vh;
-    -o-transition: width .4s;
-    transition: width .4s;
-    -webkit-transition: width .4s; }
-  #fullscreen-m .m-body .riopeleb,
-  #fullscreen-m .m-body .sedarisb,
-  #fullscreen-m .m-body .palateb,
-  #fullscreen-m .m-body .parallaxb,
-  #fullscreen-m .m-body .jonesb,
-  #fullscreen-m .m-body .luisb,
-  #fullscreen-m .m-body .sceneb,
-  #fullscreen-m .m-body .untitledb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    float: left;
-    width: 60%;
-    height: 100vh;
-    -o-transition: width .4s;
-    transition: width .4s;
-    -webkit-transition: width .4s; }
+    height: 100vh; }
   #fullscreen-m .m-body .info {
     background-color: white;
     -webkit-box-align: end;
@@ -456,43 +422,37 @@ img {
       font-size: 18px; }
   #fullscreen-m .m-body .riopele,
   #fullscreen-m .m-body .riopeleb {
-    background-image: url(../img/riopele1.png);
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-image: url(../img/riopele1.png); }
   #fullscreen-m .m-body .sedaris,
   #fullscreen-m .m-body .sedarisb {
-    background-image: url(../img/sedaris1.gif);
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-image: url(../img/sedaris1.gif); }
   #fullscreen-m .m-body .palate,
   #fullscreen-m .m-body .palateb {
-    background-image: url(../img/palate1.gif);
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-image: url(../img/palate1.gif); }
   #fullscreen-m .m-body .parallax,
   #fullscreen-m .m-body .parallaxb {
-    background-image: url(../img/parallax1.gif);
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-image: url(../img/parallax1.gif); }
   #fullscreen-m .m-body .jones,
   #fullscreen-m .m-body .jonesb {
-    background-image: url(../img/jones1.gif);
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-image: url(../img/jones1.gif); }
   #fullscreen-m .m-body .luis,
   #fullscreen-m .m-body .luisb {
-    background-image: url(../img/luis.jpg);
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-image: url(../img/luis.jpg); }
   #fullscreen-m .m-body .scene,
   #fullscreen-m .m-body .sceneb {
-    background-image: url(../img/scene.png);
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-image: url(../img/scene.png); }
   #fullscreen-m .m-body .untitled,
   #fullscreen-m .m-body .untitledb {
-    background-image: url(../img/untitled.png);
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-image: url(../img/untitled.png); }
   #fullscreen-m .m-body .hover {
+    width: 40%; }
+
+.grow {
+  width: 15%;
+  display: block;
+  background-size: cover;
+  -webkit-transition: .4s ease all;
+  -o-transition: .4s ease all;
+  transition: .4s ease all; }
+  .grow:hover {
     width: 40%; }
