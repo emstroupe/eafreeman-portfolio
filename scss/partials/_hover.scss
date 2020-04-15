@@ -1,48 +1,34 @@
-#fullscreen-m{ width: 100vw; height: 100vh; }
+#collection-h{ width: 100vw; height: 100vh; }
 
-.m-fullscreen-menu{
+.h-content-menu{
     background: white;
     margin: 0;  padding: 0;
 
-    .m-dialog {
+    .h-view {
         margin: 0;  padding: 0;
         width: 100vw;
-        height:100vh;
-        background-color: white;
+        height: 100vh;
+        background-color: $color-background;
     }
 
-    .m-content {
+    .h-content {
         background: transparent;
         margin: 0;  padding: 0;
         border: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
-
-        button{
-            position: absolute;
-            top: 20px; left: 20px;
-            z-index: 2000;
-
-            span{
-                font-size: 18px;
-
-                i{
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    font-style: normal;
-                }
-            }
-        }
     }
 }
 
-#fullscreen-m{
-    .m-body{
+#collection-h{
+    .h-body{
         display: flex;
         background-color: lightgrey;
         width: 100vw;
         height: 100vh;
-        margin: 0;  padding: 0;
+        margin: 0;  
+        padding: 0;
+        // @include sans-fontrules; 
 
         .info,
         .riopele,
@@ -53,44 +39,17 @@
         .luis,
         .scene,
         .untitled{
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
-
-            // float: left;
-            // width: 15%;
             height: 100vh;
-
-            // transition: width .4s;
-            // -webkit-transition: width .4s;
+            font: transparent;
         }
 
-        .riopeleb,
-        .sedarisb,
-        .palateb,
-        .parallaxb,
-        .jonesb,
-        .luisb,
-        .sceneb,
-        .untitledb{
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
-
-            // float: left;
-            // width: 60%;
-            // height: 100vh;
-
-            // transition: width .4s;
-            // -webkit-transition: width .4s;
         }
 
         .info{
             background-color: white;
             align-items: flex-end;
             justify-content: flex-start;
-
-            padding: 4vh 5vw;
+            padding: 60vh 5vw;
 
             h1{
                 font-size: 100px;
@@ -101,64 +60,45 @@
 
             p{
                 color: lightgrey;
-                text-transform: uppercase;
                 font-size: 18px;
             }
         }
 
-        .riopele,
-        .riopeleb{ 
+        .riopele{ 
             background-image: url(../img/riopele1.png); 
-           
-     
         }
-        .sedaris,
-        .sedarisb{
+
+        .sedaris{
             background-image: url(../img/sedaris1.gif); 
-            
-           }
-
-        .palate,
-        .palateb{ 
-            background-image: url(../img/palate1.gif); 
-           
-            
-         }
-         .parallax,
-         .parallaxb{ 
-            background-image: url(../img/parallax1.gif); 
-         
-         }
-
-
-        .jones,
-        .jonesb{ 
-            background-image: url(../img/jones1.gif); 
-          
-     
         }
-        .luis,
-        .luisb{
+
+        .palate{ 
+            background-image: url(../img/palate1.gif); 
+        }
+
+        .parallax{ 
+            background-image: url(../img/parallax1.gif); 
+        }
+
+        .jones{ 
+            background-image: url(../img/jones1.gif); 
+        }
+
+        .luis{
             background-image: url(../img/luis.jpg); 
-           
-           }
+        }
 
-        .scene,
-        .sceneb{ 
+        .scene{ 
             background-image: url(../img/scene.png); 
-        
-            
-         }
+        }
 
-        .untitled,
-        .untitledb{ 
+        .untitled{ 
             background-image: url(../img/untitled.png); 
-         
-         }
+        }
 
         .hover{ width: 40%; }
     }
-}
+
 .grow {
     width: 15%;
     display: block;
