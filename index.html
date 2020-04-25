@@ -12,6 +12,9 @@
     <!-- ADOBE CSS -->
     <link rel="stylesheet" href="https://use.typekit.net/apn8enz.css">
 
+    <!-- SLICK CSS -->
+    <link href="slick/slick.css" rel="stylesheet" type="text/css" />
+
     <!-- MAIN CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -33,27 +36,19 @@
 
     <main>
         <section class="hero">
-            <div class="hero-wrapper">
-                <div class="slide">
-                    <a href="#"><img src="img/jones1.gif" alt="Placeholder">
+            <div class="slider-container">
+                <div class="single-item">
+                    <div class="slide box--1"></div>
+                    <div class="slide box--2"></div>
+                    <div class="slide box--3"></div>
                 </div>
-                <!-- <div class="slide">
-                    <a href="#"><img src="img/luis.jpg" alt="Placeholder">
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="img/scene2.jpg" alt="Placeholder">
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="img/riopele1a.gif" alt="Placeholder">
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="img/parallax1.gif" alt="Placeholder">
-                </div> -->
             </div>
         </section>
+
         <div class="sticky">
             <img src="img/arrow.png" alt="Placeholder">
         </div>
+
         <section id="about">
 
             <div class="container">
@@ -106,12 +101,19 @@
 
     </section>
 
+    <!-- SLICK JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- SLICK JS -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
 
     <!-- SMOOTH SCROLL JS -->
-    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <!-- <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
+    </script> -->
 
     <!-- SCROLL OUT SCROLL TRIGGERED ANIMATION -->
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>

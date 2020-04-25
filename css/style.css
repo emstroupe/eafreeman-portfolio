@@ -216,6 +216,7 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: absolute;
+  z-index: 100;
   width: 100%;
   margin: 0; }
 
@@ -267,25 +268,6 @@ img {
   border-bottom: 2px solid rgba(0, 0, 0, 0.5); }
 
 /* HERO */
-.hero {
-  background-color: #f7f7f7;
-  height: 100vh;
-  padding: 0; }
-
-.hero-wrapper {
-  height: 100vh;
-  margin: 0;
-  padding: 0; }
-  .hero-wrapper .slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    max-width: 100%;
-    height: auto; }
-
 /* SITE-FOOTER */
 .site-footer {
   background-color: rgba(0, 0, 0, 0.9);
@@ -577,3 +559,37 @@ img {
   -webkit-transition: .4s all ease-out;
   -o-transition: .4s all ease-out;
   transition: .4s all ease-out; }
+
+.hero {
+  border: 1px solid orange;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+.slider-container {
+  border: 1px solid red;
+  position: relative;
+  height: 100vh;
+  width: 100vw; }
+
+.single-item {
+  border: 1px solid blue; }
+
+.slide {
+  background-color: rgba(255, 0, 0, 0.3);
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle;
+  height: 100vh; }
+
+.box--1 {
+  background-image: url(../img/Jones_Home_Blk_Border.jpg); }
+
+.box--2 {
+  background-image: url(../img/Jones_Home_Blk_Shadow.jpg); }
+
+.box--3 {
+  background-image: url(../img/sedaris2.gif); }
