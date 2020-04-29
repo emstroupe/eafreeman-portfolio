@@ -20,7 +20,7 @@
     }
 }
 
-#collection-h{
+#collection-h{ 
     .h-body{
         display: flex;
         background-color: lightgrey;
@@ -69,7 +69,7 @@
         }
 
         .sedaris{
-            background-image: url(../img/sedaris1.gif); 
+            background-image: url(../img/Sedaris_Badges.png); 
         }
 
         .palate{ 
@@ -81,15 +81,15 @@
         }
 
         .jones{ 
-            background-image: url(../img/jones1.gif); 
+            background-image: url(../img/Jones_Home.png); 
         }
 
         .luis{
-            background-image: url(../img/luis.jpg); 
+            background-image: url(../img/Luis_Home.png);
         }
 
         .scene{ 
-            background-image: url(../img/scene.png); 
+            background-image: url(../img/Scene_Home.png); 
         }
 
         .untitled{ 
@@ -98,6 +98,10 @@
 
         .hover{ width: 40%; }
     }
+}
+
+    
+
 
 .grow {
     width: 15%;

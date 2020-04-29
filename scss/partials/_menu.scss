@@ -15,7 +15,6 @@
         margin-top: 0;
         padding: 0;
         list-style: none;
-
     }
     li {
         float: left;
@@ -24,22 +23,34 @@
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 2.5em;
-        }
+    }
 
     &.active {
         position: absolute;
         z-index: 100;
         li {
-            opacity: .9;
-            transition: all .4s cubic-bezier(0,1,1,1);
+            opacity: 0.9;
+            transition: all 0.4s cubic-bezier(0, 1, 1, 1);
             transform: translateY(0);
             opacity: 1;
-            &:nth-child(1) { transition-delay: .4s; }
-            &:nth-child(2) { transition-delay: .6s; }
-            &:nth-child(3) { transition-delay: .8s; }
-            &:nth-child(4) { transition-delay: 1s; }
-            &:nth-child(5) { transition-delay: 1.2s; }
-            &:nth-child(6) { transition-delay: 1.4s; }
+            &:nth-child(1) {
+                transition-delay: 0.4s;
+            }
+            &:nth-child(2) {
+                transition-delay: 0.6s;
+            }
+            &:nth-child(3) {
+                transition-delay: 0.8s;
+            }
+            &:nth-child(4) {
+                transition-delay: 1s;
+            }
+            &:nth-child(5) {
+                transition-delay: 1.2s;
+            }
+            &:nth-child(6) {
+                transition-delay: 1.4s;
+            }
         }
         a {
             display: block;
@@ -55,7 +66,7 @@
     width: 1.5em;
     height: 1.5em;
     overflow: hidden;
-    z-index: 200;
+    z-index: 10000;
     cursor: pointer;
 
     &:before {
@@ -63,15 +74,14 @@
         font-size: 1.2em;
         width: 1.5em;
         height: 1.5em;
-        // content: url(/img/ [insert png]);
+        content: url(../img/Hamburger.2.png);
         content: "\2630";
-        transform: rotate(90deg);
     }
 }
 
 .active .menu-button.navicon:before {
-    // content: url(/img/ [insert png]);
-    content: "\2630";
-    transform: rotateX(0deg);
-    transition: .4s all ease-out;
+    content: url(../img/Hamburger.2.png);
+    // content: "\2630";
+    transform: rotate(90deg);
+    transition: 0.4s all ease-out;
 }

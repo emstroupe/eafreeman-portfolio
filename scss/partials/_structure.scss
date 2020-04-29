@@ -1,59 +1,56 @@
-
 /* SITE HEADER */
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-    margin: 0;
-  }
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  margin: 0;
+}
 .site-header h1 {
   font-size: 1.25em;
-   padding: 0;
-    margin-top: 2em;
-    margin-left: 2em;
-    transform-origin: center;
-    transform: rotate(-90deg) translate(-50vh);
-  }
-  
-  .site-header h1 a {
-display: inline-block;
-padding: 1em 1em;
-  }
-  
-  
-  .site-header h1 a:hover {
-    color: rgba(0, 0, 0, 1);
-  }
+  padding: 0;
+  margin-top: 2em;
+  margin-left: 2em;
+  transform-origin: center;
+  transform: rotate(-90deg) translate(-50vh);
+}
+
+.site-header h1 a {
+  display: inline-block;
+  padding: 1em 1em;
+}
+
+.site-header h1 a:hover {
+  color: rgba(0, 0, 0, 1);
+}
 
 /* NAV */
 .site-navigation ul {
-    padding: 0;
-    margin-top: 0;
-    margin-right: -5em;
-    transform-origin: center;
-    transform: rotate(90deg) translate(50vh);
-  }
-  
-  .site-navigation ul li {
-    display: inline-block;
-  }
-  
-  .site-navigation ul li a {
-    display: block;
-    padding: 1em 1em;
-    transition: .2s ease-out all;
-    
-  }
-  
-  .site-navigation ul li a:hover {
-    color: rgba(0, 0, 0, 1);
-  }
-  
-  .site-navigation ul li a.selected {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-  }
+  padding: 0;
+  margin-top: 0;
+  margin-right: -5em;
+  transform-origin: center;
+  transform: rotate(90deg) translate(50vh);
+}
+
+.site-navigation ul li {
+  display: inline-block;
+}
+
+.site-navigation ul li a {
+  display: block;
+  padding: 1em 1em;
+  transition: 0.2s ease-out all;
+}
+
+.site-navigation ul li a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.site-navigation ul li a.selected {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
 
 /* HERO */
 // .hero {
@@ -81,15 +78,19 @@ padding: 1em 1em;
 
 /* SITE-FOOTER */
 .site-footer {
-    background-color: $color-black; 
-    margin: 0;
-    padding: 1em;  
-    display: flex;
-    justify-content: flex-end;
+  background-color: $color-black;
+  margin: 0;
+  padding: 1em;
+  // display: flex;
+  // justify-content: flex-end;
+  // align-content: flex-end;
 
-    h1, h2, h3, h4, p {
-      color: white;
-      font-weight: 200;
-    }
-
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    color: white;
+    font-weight: 200;
+  }
 }
