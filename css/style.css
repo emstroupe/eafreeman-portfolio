@@ -279,13 +279,12 @@ img {
   .site-footer h4,
   .site-footer p {
     color: white;
-    font-weight: 200;
-    -ms-flex-item-align: end;
-    align-self: flex-end; }
+    font-weight: 200; }
 
 #form {
   width: 450px;
   margin: 15px 0;
+  position: absolute;
   display: inline-block;
   float: right; }
 
@@ -336,15 +335,15 @@ img {
 
 #form input.name {
   background: no-repeat 10px 8px;
-  opacity: 1.0; }
+  opacity: 1; }
 
 #form input.email {
   background: no-repeat 10px 8px;
-  opacity: 1.0; }
+  opacity: 1; }
 
 #form textarea {
   background: no-repeat 10px 8px;
-  opacity: 1.0; }
+  opacity: 1; }
 
 #form input.submit {
   cursor: pointer;
@@ -356,10 +355,10 @@ img {
   background: #cccbcb;
   color: black;
   font-family: freight-sans-condensed-pro, sans-serif;
-  font-size: .75em;
+  font-size: 0.75em;
   line-height: 1.2em;
   font-weight: 100;
-  letter-spacing: .25em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   border-radius: 0; }
 
@@ -492,40 +491,46 @@ img {
 .box--4 {
   background-image: url(../img/Sedaris_Badges.png); }
 
-#collection-h {
+.hover-bars {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 0, 0, 0.3); }
-  #collection-h .h-body {
-    border: 1px solid green;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    background-color: lightgrey;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0; }
-  #collection-h .jones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: relative; }
+  .hover-bars .hover-text {
+    background: pink;
+    position: absolute;
+    bottom: 4vw;
+    left: 4vw;
+    z-index: -1; }
+  .hover-bars .jones {
     background-image: url(../img/Luis_Home_Hover.png); }
-  #collection-h .luis {
+  .hover-bars .luis {
     background-color: orange; }
-  #collection-h .scene {
+  .hover-bars .scene {
     background-color: blue; }
-
-.grow {
-  width: 5vw;
-  display: block;
-  background-size: cover;
-  -webkit-transition: 0.6s ease all;
-  -o-transition: 0.6s ease all;
-  transition: 0.6s ease all;
-  opacity: 50%;
-  text-transform: uppercase; }
-  .grow:hover {
-    width: 60vw;
-    opacity: 100%;
-    text-transform: lowercase; }
+  .hover-bars .hover-grow {
+    width: 5vw;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    /* Ease in & out */
+    /* Ease in */
+    -webkit-transition: 0.2s cubic-bezier(0, 1, 1, 1) all;
+    -o-transition: 0.2s cubic-bezier(0, 1, 1, 1) all;
+    transition: 0.2s cubic-bezier(0, 1, 1, 1) all;
+    /* Ease out */
+    -webkit-transition: 0.4s cubic-bezier(0, 0, 1, 0) all;
+    -o-transition: 0.4s cubic-bezier(0, 0, 1, 0) all;
+    transition: 0.4s cubic-bezier(0, 0, 1, 0) all;
+    opacity: 50%;
+    text-transform: uppercase; }
+    .hover-bars .hover-grow:hover {
+      background-position: left center;
+      width: 60vw;
+      opacity: 100%;
+      text-transform: lowercase; }

@@ -1,25 +1,19 @@
-#collection-h {
+.hover-bars {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 0, 0, 0.3);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
 
-    .h-body {
-        border: 1px solid green;
-        display: flex;
-        justify-content: flex-end;
-        background-color: lightgrey;
-        height: 100vh;
-        width: 100vw;
-        margin: 0;
-        padding: 0;
+    .hover-text {
+        background: pink;
+        position: absolute;
+        bottom: 4vw;
+        left: 4vw;
+        // width: 100vh;
+        // min-width: 20vw;
+        z-index: -1;
     }
-
-    // .info {
-    //     background-color: white;
-    //     align-items: flex-end;
-    //     justify-content: flex-start;
-    //     padding: 60vh 5vw;
-    // }
 
     .jones {
         // background-color: red;
@@ -34,19 +28,27 @@
         background-color: blue;
         // background-image: url(../img/Scene_Home.png);
     }
-}
 
-.grow {
-    width: 5vw;
-    display: block;
-    background-size: cover;
-    transition: 0.6s ease all;
-    opacity: 50%;
-    text-transform: uppercase;
+    .hover-grow {
+        width: 5vw;
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        /* Ease in & out */
+        // transition: 0.4s cubic-bezier(1, 0, 0, 1) all;
+        /* Ease in */
+        transition: 0.2s cubic-bezier(0, 1, 1, 1) all;
+        /* Ease out */
+        transition: 0.4s cubic-bezier(0, 0, 1, 0) all;
 
-    &:hover {
-        width: 60vw;
-        opacity: 100%;
-        text-transform: lowercase;
+        opacity: 50%;
+        text-transform: uppercase;
+
+        &:hover {
+            background-position: left center;
+            width: 60vw;
+            opacity: 100%;
+            text-transform: lowercase;
+        }
     }
 }
