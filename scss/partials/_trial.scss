@@ -1,0 +1,58 @@
+.hover-bars {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    .hover-text {
+        position: absolute;
+        bottom: 7vw;
+        left: 7vw;
+        z-index: -1;
+    }
+
+    .jones {
+        background-image: url(../img/Jones_Home.png);
+    }
+
+    .luis {
+        background-image: url(../img/Luis_Home_Hover.png);
+    }
+
+    .scene {
+        background-image: url(../img/Scene_Home.png);
+    }
+
+    .riopele {
+        background-image: url(../img/riopele_logo.gif);
+    }
+
+    .sedaris {
+        background-image: url(../img/Sedaris_Badges.png);
+    }
+
+    .hover-grow {
+        width: 6vw;
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        /* Ease in & out */
+        transition: 0.4s cubic-bezier(1, 0, 0, 1) all;
+        /* Ease in */
+        // transition: 0.2s cubic-bezier(0, 1, 1, 1) all;
+        /* Ease out */
+        // transition: 0.4s cubic-bezier(0, 0, 1, 0) all;
+        opacity: 70%;
+        a {
+            color: blue;
+        }
+
+        &:hover {
+            background-position: left center;
+            width: 60vw;
+            opacity: 100%;
+            text-transform: lowercase;
+        }
+    }
+}

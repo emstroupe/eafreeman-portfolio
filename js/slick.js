@@ -9,7 +9,7 @@ $('.single-item').slick({
     centerMode: false,
     slidesToShow: 1,
     lazyLoad: 'progressive',
-    speed: 900
+    speed: 500,
 });
 
 // next button

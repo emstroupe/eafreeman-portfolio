@@ -3,21 +3,23 @@ body {
     font-family: $serif-fontfamily;
     font-size: 100%;
     line-height: 1.4;
-    color: rgba(0, 0, 0, 0.8); 
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /* HEADINGS */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 }
 
 h1 {
-    @include sans-fontrules; 
-    font-size: 2em;    
+    @include sans-fontrules;
+    font-size: 2em;
 }
 
 h2 {
     @include sans-fontrules;
-    font-size: 1.75em; 
+    font-size: 1.75em;
 }
 
 h3 {
@@ -26,16 +28,16 @@ h3 {
 }
 
 h4 {
-    @include sans-fontrules; 
+    @include sans-fontrules;
     font-size: 1em;
 }
 
 p {
     font-family: $serif-fontfamily;
-    font-size: .9em;
+    font-size: 0.9em;
     max-width: 27em;
     line-height: 1.4;
-    color: $color-darkgrey; 
+    color: $color-darkgrey;
 }
 
 .site-navigation li {
@@ -59,4 +61,3 @@ a {
     text-decoration: none;
     color: $color-midgrey;
 }
-

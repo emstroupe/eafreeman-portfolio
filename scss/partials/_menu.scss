@@ -60,28 +60,29 @@
 
 /* MENU BUTTON */
 .menu-button {
+    border: 1px solid orange;
     position: absolute;
-    top: 6.25vw;
-    right: 11vw;
-    width: 1.5em;
-    height: 1.5em;
+    top: 1vw;
+    right: 2vw;
+    width: 5em;
+    height: 5em;
     overflow: hidden;
-    z-index: 10000;
+    z-index: 1000000;
     cursor: pointer;
 
     &:before {
+        border: 1px solid red;
+        background-image: red;
         display: inline-block;
         font-size: 1.2em;
         width: 1.5em;
         height: 1.5em;
-        content: url(../img/Hamburger.2.png);
-        content: "\2630";
+        content: url(../img/hamburger.png);
     }
 }
 
 .active .menu-button.navicon:before {
-    content: url(../img/Hamburger.2.png);
-    // content: "\2630";
+    content: url(../img/hamburger.2.png);
     transform: rotate(90deg);
     transition: 0.4s all ease-out;
 }
