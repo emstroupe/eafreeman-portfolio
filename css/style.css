@@ -362,6 +362,104 @@ img {
   text-transform: uppercase;
   border-radius: 0; }
 
+#collection-h {
+  width: 100vw;
+  height: 100vh; }
+
+.h-content-menu {
+  background: white;
+  margin: 0;
+  padding: 0; }
+  .h-content-menu .h-view {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7f7f7; }
+  .h-content-menu .h-content {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+#collection-h .h-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lightgrey;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+  #collection-h .h-body .info,
+  #collection-h .h-body .riopele,
+  #collection-h .h-body .sedaris,
+  #collection-h .h-body .palate,
+  #collection-h .h-body .parallax,
+  #collection-h .h-body .jones,
+  #collection-h .h-body .luis,
+  #collection-h .h-body .scene,
+  #collection-h .h-body .untitled {
+    height: 100vh;
+    font: transparent; }
+
+#collection-h .info {
+  background-color: white;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 60vh 5vw; }
+  #collection-h .info h1 {
+    font-size: 100px;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-bottom: 35px; }
+  #collection-h .info p {
+    color: lightgrey;
+    font-size: 18px; }
+
+#collection-h .riopele {
+  background-image: url(../img/riopele1.png); }
+
+#collection-h .sedaris {
+  background-image: url(../img/Sedaris_Badges.png); }
+
+#collection-h .palate {
+  background-image: url(../img/palate1.gif); }
+
+#collection-h .parallax {
+  background-image: url(../img/parallax1.gif); }
+
+#collection-h .jones {
+  background-image: url(../img/Jones_Home.png); }
+
+#collection-h .luis {
+  background-image: url(../img/Luis_Home.png); }
+
+#collection-h .scene {
+  background-image: url(../img/Scene_Home.png); }
+
+#collection-h .untitled {
+  background-image: url(../img/untitled.png); }
+
+#collection-h .hover {
+  width: 40%; }
+
+.grow {
+  width: 15%;
+  display: block;
+  background-size: cover;
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all; }
+  .grow:hover {
+    width: 40%; }
+
 .site-header .site-nav {
   position: absolute;
   width: 100%;
@@ -434,26 +532,24 @@ img {
 
 /* MENU BUTTON */
 .menu-button {
-  border: 1px solid orange;
+  border: 1px solid blue;
   position: absolute;
   top: 1vw;
   right: 2vw;
-  width: 5em;
+  width: 20em;
   height: 5em;
   overflow: hidden;
   z-index: 1000000;
   cursor: pointer; }
   .menu-button:before {
-    border: 1px solid red;
-    background-image: red;
+    content: "\2630";
     display: inline-block;
     font-size: 1.2em;
-    width: 1.5em;
-    height: 1.5em;
-    content: url(../img/hamburger.png); }
+    width: 10em;
+    height: 5em; }
 
 .active .menu-button.navicon:before {
-  content: url(../img/hamburger.2.png);
+  content: "\2630";
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);

@@ -1,11 +1,16 @@
-#collection-h{ width: 100vw; height: 100vh; }
+#collection-h {
+    width: 100vw;
+    height: 100vh;
+}
 
-.h-content-menu{
+.h-content-menu {
     background: white;
-    margin: 0;  padding: 0;
+    margin: 0;
+    padding: 0;
 
     .h-view {
-        margin: 0;  padding: 0;
+        margin: 0;
+        padding: 0;
         width: 100vw;
         height: 100vh;
         background-color: $color-background;
@@ -13,22 +18,23 @@
 
     .h-content {
         background: transparent;
-        margin: 0;  padding: 0;
+        margin: 0;
+        padding: 0;
         border: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
     }
 }
 
-#collection-h{ 
-    .h-body{
+#collection-h {
+    .h-body {
         display: flex;
         background-color: lightgrey;
         width: 100vw;
         height: 100vh;
-        margin: 0;  
+        margin: 0;
         padding: 0;
-        // @include sans-fontrules; 
+        // @include sans-fontrules;
 
         .info,
         .riopele,
@@ -38,82 +44,78 @@
         .jones,
         .luis,
         .scene,
-        .untitled{
+        .untitled {
             height: 100vh;
             font: transparent;
         }
+    }
 
+    .info {
+        background-color: white;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding: 60vh 5vw;
+
+        h1 {
+            font-size: 100px;
+            line-height: 1em;
+            text-transform: uppercase;
+            margin-bottom: 35px;
         }
 
-        .info{
-            background-color: white;
-            align-items: flex-end;
-            justify-content: flex-start;
-            padding: 60vh 5vw;
-
-            h1{
-                font-size: 100px;
-                line-height: 1em;
-                text-transform: uppercase;
-                margin-bottom: 35px;
-            }
-
-            p{
-                color: lightgrey;
-                font-size: 18px;
-            }
+        p {
+            color: lightgrey;
+            font-size: 18px;
         }
+    }
 
-        .riopele{ 
-            background-image: url(../img/riopele1.png); 
-        }
+    .riopele {
+        background-image: url(../img/riopele1.png);
+    }
 
-        .sedaris{
-            background-image: url(../img/Sedaris_Badges.png); 
-        }
+    .sedaris {
+        background-image: url(../img/Sedaris_Badges.png);
+    }
 
-        .palate{ 
-            background-image: url(../img/palate1.gif); 
-        }
+    .palate {
+        background-image: url(../img/palate1.gif);
+    }
 
-        .parallax{ 
-            background-image: url(../img/parallax1.gif); 
-        }
+    .parallax {
+        background-image: url(../img/parallax1.gif);
+    }
 
-        .jones{ 
-            background-image: url(../img/Jones_Home.png); 
-        }
+    .jones {
+        background-image: url(../img/Jones_Home.png);
+    }
 
-        .luis{
-            background-image: url(../img/Luis_Home.png);
-        }
+    .luis {
+        background-image: url(../img/Luis_Home.png);
+    }
 
-        .scene{ 
-            background-image: url(../img/Scene_Home.png); 
-        }
+    .scene {
+        background-image: url(../img/Scene_Home.png);
+    }
 
-        .untitled{ 
-            background-image: url(../img/untitled.png); 
-        }
+    .untitled {
+        background-image: url(../img/untitled.png);
+    }
 
-        .hover{ width: 40%; }
+    .hover {
+        width: 40%;
     }
 }
-
-    
-
 
 .grow {
     width: 15%;
     display: block;
     background-size: cover;
-    
+
     // transform: scaleX(1);
     // transform-origin: right;
-    transition: .4s ease all;
+    transition: 0.4s ease all;
     &:hover {
         // transform: scaleX(1.2);
         width: 40%;
     }
 }
-
