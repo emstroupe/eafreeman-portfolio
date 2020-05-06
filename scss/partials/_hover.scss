@@ -5,17 +5,16 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
-    border: 1px solid red;
+
     .hover-text {
         position: absolute;
         bottom: 7vw;
         left: 7vw;
         z-index: -1;
-        border: 1px solid blue;
     }
 
     .jones {
-        background-image: url(../img/Jones_Home.png);
+        background-image: url(../img/jones_models.jpg);
     }
 
     .luis {
@@ -35,7 +34,7 @@
     }
 
     .hover-grow {
-        width: 3vw;
+        width: 5vw;
         display: block;
         background-size: cover;
         background-position: center center;

@@ -1,0 +1,26 @@
+.project-hero {
+    height: 100vh;
+    width: 100vw;
+}
+
+.project-title {
+    width: 30vw;
+    position: absolute;
+    bottom: 6vh;
+    left: 6vw;
+    h3 {
+        font-size: 2.5em;
+    }
+}
+
+.project-image {
+    background-image: url(../img/jones_models.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60vw;
+    position: absolute;
+}

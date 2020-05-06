@@ -330,16 +330,14 @@ img {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  position: relative;
-  border: 1px solid red; }
+  position: relative; }
   .hover-bars .hover-text {
     position: absolute;
     bottom: 7vw;
     left: 7vw;
-    z-index: -1;
-    border: 1px solid blue; }
+    z-index: -1; }
   .hover-bars .jones {
-    background-image: url(../img/Jones_Home.png); }
+    background-image: url(../img/jones_models.jpg); }
   .hover-bars .luis {
     background-image: url(../img/Luis_Home_Hover.png); }
   .hover-bars .scene {
@@ -349,7 +347,7 @@ img {
   .hover-bars .sedaris {
     background-image: url(../img/Sedaris_Badges.png); }
   .hover-bars .hover-grow {
-    width: 3vw;
+    width: 5vw;
     display: block;
     background-size: cover;
     background-position: center center;
@@ -376,6 +374,29 @@ img {
         -webkit-transition: 0.4s all ease-out;
         -o-transition: 0.4s all ease-out;
         transition: 0.4s all ease-out; }
+
+.project-hero {
+  height: 100vh;
+  width: 100vw; }
+
+.project-title {
+  width: 30vw;
+  position: absolute;
+  bottom: 6vh;
+  left: 6vw; }
+  .project-title h3 {
+    font-size: 2.5em; }
+
+.project-image {
+  background-image: url(../img/jones_models.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 60vw;
+  position: absolute; }
 
 .hero {
   height: 100vh;
