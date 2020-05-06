@@ -50,6 +50,7 @@ p {
 }
 
 li {
+    @include sans-fontrules;
     @include li-rules;
     font-family: $sans-fontfamily;
     font-weight: 200;

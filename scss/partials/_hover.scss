@@ -1,88 +1,16 @@
-#collection-h {
+.hover-bars {
     width: 100vw;
     height: 100vh;
-}
+    padding-top: 2em;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
 
-.h-content-menu {
-    background: white;
-    margin: 0;
-    padding: 0;
-
-    .h-view {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: $color-background;
-    }
-
-    .h-content {
-        background: transparent;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-}
-
-#collection-h {
-    .h-body {
-        display: flex;
-        background-color: lightgrey;
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        // @include sans-fontrules;
-
-        .info,
-        .riopele,
-        .sedaris,
-        .palate,
-        .parallax,
-        .jones,
-        .luis,
-        .scene,
-        .untitled {
-            height: 100vh;
-            font: transparent;
-        }
-    }
-
-    .info {
-        background-color: white;
-        align-items: flex-end;
-        justify-content: flex-start;
-        padding: 60vh 5vw;
-
-        h1 {
-            font-size: 100px;
-            line-height: 1em;
-            text-transform: uppercase;
-            margin-bottom: 35px;
-        }
-
-        p {
-            color: lightgrey;
-            font-size: 18px;
-        }
-    }
-
-    .riopele {
-        background-image: url(../img/riopele1.png);
-    }
-
-    .sedaris {
-        background-image: url(../img/Sedaris_Badges.png);
-    }
-
-    .palate {
-        background-image: url(../img/palate1.gif);
-    }
-
-    .parallax {
-        background-image: url(../img/parallax1.gif);
+    .hover-text {
+        position: absolute;
+        bottom: 7vw;
+        left: 7vw;
+        z-index: -1;
     }
 
     .jones {
@@ -90,32 +18,50 @@
     }
 
     .luis {
-        background-image: url(../img/Luis_Home.png);
+        background-image: url(../img/Luis_Home_Hover.png);
     }
 
     .scene {
         background-image: url(../img/Scene_Home.png);
     }
 
-    .untitled {
-        background-image: url(../img/untitled.png);
+    .riopele {
+        background-image: url(../img/riopele_logo.gif);
     }
 
-    .hover {
-        width: 40%;
+    .sedaris {
+        background-image: url(../img/Sedaris_Badges.png);
     }
-}
 
-.grow {
-    width: 15%;
-    display: block;
-    background-size: cover;
+    .hover-grow {
+        width: 6vw;
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        /* Ease in & out */
+        transition: 0.4s cubic-bezier(1, 0, 0, 1) all;
+        /* Ease in */
+        // transition: 0.2s cubic-bezier(0, 1, 1, 1) all;
+        /* Ease out */
+        // transition: 0.4s cubic-bezier(0, 0, 1, 0) all;
+        opacity: 70%;
+        .title {
+            opacity: 0;
+            position: absolute;
+            bottom: 7vw;
+            left: 7vw;
+            background: white;
+        }
 
-    // transform: scaleX(1);
-    // transform-origin: right;
-    transition: 0.4s ease all;
-    &:hover {
-        // transform: scaleX(1.2);
-        width: 40%;
+        &:hover {
+            background-position: center;
+            background-size: cover;
+            width: 40vw;
+            opacity: 100%;
+            .title {
+                opacity: 1;
+                transition: 0.4s all ease-out;
+            }
+        }
     }
 }

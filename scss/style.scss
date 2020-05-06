@@ -14,11 +14,6 @@ CSS TABLE OF CONTENTS
         # SECTION
         # CONTAINER 
     # STRUCTURE
-        # SITE HEADER
-        # MENU BUTTON
-        # NAV
-        # HERO
-        # MAIN
         # SITE FOOTER
     # BREAKPOINTS
         # @MEDIA SMALL
@@ -30,6 +25,10 @@ CSS TABLE OF CONTENTS
     # IMAGES
     # FORM
     # HOVER 
+    # MENU 
+        # SITE HEADER
+        # SITE NAVIGATION
+        # MENU BUTTON
 
 
 
@@ -66,7 +65,5 @@ $breakpoint-large: 1250px;
 @import "partials/form";
 @import "partials/hover";
 @import "partials/subpages";
-@import "partials/menu";
 @import "partials/slider";
-@import "partials/trial";
-// @import "partials/hamburger";
+@import "partials/menu";
