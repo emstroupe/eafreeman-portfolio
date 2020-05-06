@@ -5,12 +5,13 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
-
+    border: 1px solid red;
     .hover-text {
         position: absolute;
         bottom: 7vw;
         left: 7vw;
         z-index: -1;
+        border: 1px solid blue;
     }
 
     .jones {
@@ -34,7 +35,7 @@
     }
 
     .hover-grow {
-        width: 6vw;
+        width: 3vw;
         display: block;
         background-size: cover;
         background-position: center center;

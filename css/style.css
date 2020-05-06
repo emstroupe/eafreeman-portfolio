@@ -146,7 +146,7 @@ section {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1em; }
+  padding: 0; }
 
 .row {
   display: -webkit-box;
@@ -214,8 +214,17 @@ img {
 /* SITE-FOOTER */
 .site-footer {
   background-color: rgba(0, 0, 0, 0.9);
+  height: 50vh;
   margin: 0;
-  padding: 1em; }
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end; }
   .site-footer h1,
   .site-footer h2,
   .site-footer h3,
@@ -223,6 +232,12 @@ img {
   .site-footer p {
     color: white;
     font-weight: 200; }
+
+.contact-info {
+  position: absolute;
+  border: 1px solid orange;
+  bottom: -500px;
+  left: 3vw; }
 
 #form {
   width: 450px;
@@ -315,12 +330,14 @@ img {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  position: relative; }
+  position: relative;
+  border: 1px solid red; }
   .hover-bars .hover-text {
     position: absolute;
     bottom: 7vw;
     left: 7vw;
-    z-index: -1; }
+    z-index: -1;
+    border: 1px solid blue; }
   .hover-bars .jones {
     background-image: url(../img/Jones_Home.png); }
   .hover-bars .luis {
@@ -332,7 +349,7 @@ img {
   .hover-bars .sedaris {
     background-image: url(../img/Sedaris_Badges.png); }
   .hover-bars .hover-grow {
-    width: 6vw;
+    width: 3vw;
     display: block;
     background-size: cover;
     background-position: center center;

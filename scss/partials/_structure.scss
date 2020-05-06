@@ -1,11 +1,12 @@
 /* SITE-FOOTER */
 .site-footer {
   background-color: $color-black;
+  height: 50vh;
   margin: 0;
   padding: 1em;
-  // display: flex;
-  // justify-content: flex-end;
-  // align-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
 
   h1,
   h2,
@@ -16,4 +17,10 @@
     font-weight: 200;
   }
 }
-PHOT
+
+.contact-info {
+  position: absolute;
+  border: 1px solid orange;
+  bottom: -500px;
+  left: 3vw;
+}
